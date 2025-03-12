@@ -1,4 +1,3 @@
-
 # Loan Approval Prediction using Machine Learning
 
 ## 1. Introduction
@@ -66,33 +65,40 @@ A heatmap was generated to visualize feature correlations. A moderate positive c
 ## 4. Machine Learning Models
 
 ### 4.1 Logistic Regression
+Logistic Regression is a statistical model used for binary classification. It estimates the probability that a given input belongs to a certain class by applying a logistic function to a linear equation. It is useful for scenarios where the dependent variable is categorical.
 - Achieved an accuracy of **82.70%**.
 
 ### 4.2 K-Nearest Neighbors (KNN)
+The K-Nearest Neighbors algorithm classifies a new data point based on the majority class among its nearest neighbors. The optimal number of neighbors (k) is determined through experimentation.
 - Achieved a maximum accuracy of **80.54%** with optimized k-values.
 
 ### 4.3 Support Vector Machine (SVM)
+Support Vector Machines aim to find the optimal hyperplane that separates classes in a high-dimensional space. It works well for classification tasks and can be adapted for nonlinear separations using kernel functions.
 - Achieved an accuracy of **82.70%**.
 
 ### 4.4 Naive Bayes
-- Categorical Naive Bayes accuracy: **82.70%**
-- Gaussian Naive Bayes accuracy: **83.24%**
+Naive Bayes is a probabilistic classifier based on Bayes' Theorem. It assumes independence between features, making it computationally efficient and effective for text classification and categorical data.
+- **Categorical Naive Bayes** accuracy: **82.70%**
+- **Gaussian Naive Bayes** accuracy: **83.24%**
 
 ### 4.5 Decision Tree
+A Decision Tree is a non-parametric supervised learning method used for classification. It recursively splits the dataset based on feature values, forming a tree-like structure to make decisions.
 - Achieved an accuracy of **82.70%** with optimized max_leaf_nodes.
 
 ### 4.6 Random Forest
-- Achieved an accuracy of **82.70%**.
+Random Forest is an ensemble learning method that builds multiple decision trees and merges their outputs for improved accuracy. It reduces overfitting by averaging the results of individual trees.
+- Achieved an accuracy of **82.70%** with optimized parameters.
 
 ### 4.7 Gradient Boosting
+Gradient Boosting is a boosting algorithm that builds weak learners sequentially, adjusting for errors in previous iterations. It is powerful for predictive modeling but requires careful tuning to prevent overfitting.
 - Achieved an accuracy of **80.54%** after hyperparameter tuning.
 
 ## 5. Model Comparison
 
 | Model               | Accuracy (%) |
 |---------------------|--------------|
-| Gaussian Naive Bayes | 83.24       |
-| Logistic Regression | 82.70       |
+| Gaussian NB        | 83.24        |
+| Logistic Regression | 82.70        |
 | Support Vector Machine | 82.70     |
 | Categorical Naive Bayes | 82.70    |
 | Decision Tree      | 82.70        |
@@ -101,7 +107,7 @@ A heatmap was generated to visualize feature correlations. A moderate positive c
 | Gradient Boosting  | 80.54        |
 
 ## 6. Conclusion
-- The **Gaussian Naive Bayes classifier** achieved the highest accuracy (**83.24%**) and is the best model for loan approval prediction in this scenario.
+- The **Gaussian Naive Bayes classifier** achieved the highest accuracy (**83.24%**) and is the best model for loan approval prediction.
 - Feature engineering, handling missing values, and balancing the dataset using SMOTE improved model performance.
 - Future improvements could involve hyperparameter tuning, feature selection, and alternative ML models such as deep learning.
 
